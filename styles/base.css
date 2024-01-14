@@ -1,0 +1,47 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap'); */
+
+* {
+    font-family: roboto;
+}
+
+main {
+    max-width: 1500px;
+    margin: auto;
+}
+
+body{
+    display: grid;
+    grid-template: auto auto auto/ auto;
+    text-align: center;
+    
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column: 1/2;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+    background-color:antiquewhite;
+}
+
+h1 {
+    padding: 50px
+}
+
+header img {
+    border-radius: 5%;
+    border: 2px  black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+#cards {
+    display: grid;
+    justify-content: center;
+}
