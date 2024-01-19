@@ -21,11 +21,6 @@
         margin: .5em 1em;
     }
 
-    .card {
-        display: block;
-        box-shadow: inset 3px black;
-    }
-
     .card ul {
         text-align: left;
     }
