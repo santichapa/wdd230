@@ -5,15 +5,10 @@
 }
 
 main {
-    max-width: 2000px;
-    
-}
-
-body{
     display: grid;
-    grid-template: auto auto auto/ auto;
+    grid-template: auto auto/ auto;
     text-align: center;
-    margin: auto;
+    gap: 1em;
 }
 
 header {
@@ -26,13 +21,44 @@ header {
     background-color:antiquewhite;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #36558f;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    font-weight: 500;
+    color: white;
+    padding: .5em;
+    margin: .5em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #36558f;
+    font-weight: 800;
+    border-radius: 3px;
+    
+}
+
 h1 {
-    padding: 50px
+    padding: 50px;
 }
 
 header img {
     border-radius: 5%;
     border: 2px  black;
+}
+
+h2 {
+    margin: auto;
+    padding: 1em;
+    border-bottom: 2px solid rgb(186, 186, 186);
+    width: auto;
 }
 
 ul {
@@ -41,7 +67,33 @@ ul {
     margin: 0;
   }
 
-#cards {
-    display: grid;
+.card {
+    margin: 1em;
     justify-content: center;
+    border: 2px solid rgb(186, 186, 186);
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: #fff;
+    font-weight: 400;
+    background-color: #36558f;
+    margin: 0;
+    padding: .5em;
+    width: auto;
+}
+
+.card ul {
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: .5em;
+    color: #fff;
+    background-color: #36558f;
+}
+
+footer #lastModified {
+    color: #ffca38;
 }
