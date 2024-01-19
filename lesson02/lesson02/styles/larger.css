@@ -1,0 +1,14 @@
+@media screen and (min-width: 900px) {
+
+    main {
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0;
+    }
+
+    h2 {
+        grid-column: 1/4;
+    }
+}

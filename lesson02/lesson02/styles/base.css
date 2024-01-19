@@ -1,0 +1,64 @@
+
+* {
+    font-family: roboto;
+}
+
+h1{
+    text-align: center;
+    padding: .5em;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    padding: .5em;
+}
+
+main {
+    max-width: 100%;
+    display: grid;
+    grid-template: auto / auto;
+    text-align: center;
+    gap: 1em;
+}
+
+.card {
+    max-width: 600px;
+    display: grid;
+    text-align: left;
+    margin: 1em;
+    justify-content: center;
+    border: 2px solid rgb(186, 186, 186);
+    border-radius: 0.7em;
+}
+
+.card h3 {
+    color: #fff;
+    font-weight: 400;
+    background-color: #30353d;
+    margin: 0;
+    padding: .5em;
+    width: auto;
+    border-radius: .5em .5em 0 0;
+}
+
+.card p, a, img {
+    padding: .5em;
+    margin: 0;
+}
+
+.card img {
+    max-width: 95%;
+    justify-self: center;
+}
+
+footer {
+    text-align: center;
+    padding: .5em;
+    color: #fff;
+    background-color: #000;
+}
