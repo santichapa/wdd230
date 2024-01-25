@@ -12,17 +12,30 @@
         grid-row: 1/2;
     }
 
-    nav {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
         justify-content: center;
         flex-direction: row;
     }
 
-    nav a {
+    .navigation a {
+        display: block;
         margin: .5em 1em;
     }
 
     .card ul {
         text-align: left;
+    }
+
+    .map {
+        grid-column: 1/3;
+        width: 85%;
+        height: 500px;
+        margin: auto;
     }
 
     
