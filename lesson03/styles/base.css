@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #FEFFFE;
+    --secondary-color: #0084B8;
+    --accent1-color: #20A4F3;
+    --accent2-color: #F56960;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    margin: 2em;
+
+}
+
+header, h1 {
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+h3, p, ul{
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary-color);
+}
