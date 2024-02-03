@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #FEFFFE;
+    --secondary-color: #0084B8;
+    --accent1-color: #01466e;
+    --accent2-color: #F56960;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 370px;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+header, h1 {
+    background-color: var(--secondary-color);
+    padding: .5em;
+    margin: 0 .5em;
+}
+
+#menu {
+    font-size: 1.5rem;
+    padding: .1em .2em;
+    position: absolute;
+    right: 1em;
+    top: 5em;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "🞁";
+}
+
+.navigation .open {
+    display: block;
+}
+
+.navigation {
+    background-color: var(--accent2-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 2em;
+}
+
+.navigation a {
+    display: none;
+    font-weight: 500;
+    color: white;
+    padding: .4em;
+    margin: .4em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-weight: 800;
+    border-radius: 3px;
+}
+
+.navigation a.active {
+    color: #e9fa68;
+    text-decoration: underline 2px;
+}
+
+.open a {
+	display: block;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.hero-image {
+    display: grid;
+    margin: 0;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+.hero-image img {
+    max-width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.hero-image a {
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+    font-weight: 800;
+    font-size: x-large;
+    border-radius: 1em;
+    padding: .7em;
+    margin: 0;
+    text-decoration: none;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+h3 {
+    background-color: var(--accent2-color);
+    padding: .5em;
+    margin: .5em 0;
+}
+p, ul {
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary-color);
+    margin: .5em;
+    padding: .5em;
+}
+
+.card ul {
+    list-style-type: none;
+    
+}
+
+.card {
+    background-color: lightgrey;
+    border: 2px solid var(--primary-color);
+    border-radius: .5em;
+    margin: 1em 2em ;
+    box-shadow: 0 .5em 1em .2em black;
+}
+
+footer {
+    font-weight: 300;
+    text-align: center;
+    padding: .5em;
+    color: #fff;
+    background-color: var(--secondary-color);
+}
