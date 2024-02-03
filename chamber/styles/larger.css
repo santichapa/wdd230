@@ -18,4 +18,12 @@
         padding: 1em;
     }
 
+    .card {
+        display: block;
+    } 
+
+    .card img {
+        display: none;
+    }
+
 }
