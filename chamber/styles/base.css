@@ -121,15 +121,24 @@ p, ul {
 
 .card ul {
     list-style-type: none;
-    
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:hsl(197, 100%, 36%, 50%);
 }
 
 .card {
+    display: grid;
     background-color: lightgrey;
     border: 2px solid var(--primary-color);
     border-radius: .5em;
     margin: 1em 2em ;
     box-shadow: 0 .5em 1em .2em black;
+}
+
+.card img {
+    max-width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 footer {
