@@ -1,8 +1,11 @@
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #3e7d96;
-    --accent1-color: #01466e;
-    --accent2-color: #b8564f;
+    --primary-color: #000;
+    --secondary-color: #5299c3;
+    --accent1-color: #ffffff;
+    --accent2-color: #f77c73;
+    --accent3-color: #d3d3d3;
+
+    /* #b8564f */
 
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
@@ -37,7 +40,16 @@ header, h1 {
 }
 
 #menu.open::before {
-	content: "🞁";
+	content: "✕";
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 .navigation .open {
@@ -54,8 +66,8 @@ header, h1 {
 
 .navigation a {
     display: none;
-    font-weight: 500;
-    color: white;
+    font-weight: 600;
+    color: var(--primary-color);
     padding: .4em;
     margin: .4em;
     text-decoration: none;
@@ -95,16 +107,18 @@ h2 {
 }
 
 .hero-image a {
-    color: var(--accent2-color);
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--accent3-color);
     font-weight: 800;
     font-size: x-large;
     border-radius: 1em;
+    border: 3px solid var(--accent1-color);
     padding: .7em;
     margin: 0;
     text-decoration: none;
     grid-column: 2/3;
     grid-row: 2/3;
+    text-shadow: 1px 2px 1px var(--accent1-color);
 }
 
 h3 {
@@ -114,21 +128,21 @@ h3 {
 }
 p, ul {
     font-family: var(--paragraph-font);
-    background-color: var(--secondary-color);
+    background-color: var(--accent3-color);
     margin: .5em;
     padding: .5em;
+    border-radius: .2em;
 }
 
 .card ul {
     list-style-type: none;
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color:hsl(197, 100%, 36%, 50%);
 }
 
 .card {
     display: grid;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     border: 2px solid var(--primary-color);
     border-radius: .5em;
     margin: 1em 2em ;
@@ -142,9 +156,10 @@ p, ul {
 }
 
 footer {
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     padding: .5em;
-    color: #fff;
+    color: var(--primary-color);
     background-color: var(--secondary-color);
 }
+
