@@ -24,7 +24,7 @@ modeButton.addEventListener("click", () => {
 		root.style.setProperty("--secondary-color", "#124d6f");
 		root.style.setProperty("--accent1-color", "#333");
 		root.style.setProperty("--accent2-color", "#90342e");
-		root.style.setProperty("--accent3-color", "#333");
+		root.style.setProperty("--accent3-color", "#222");
 		modeButton.textContent = "🌙";
 	}
 });
