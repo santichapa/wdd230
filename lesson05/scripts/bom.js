@@ -6,7 +6,7 @@ const ul = document.querySelector("#list");
 // using addEventListener and an anonymous function or arrow function.
 
 b.addEventListener("click", () => {
-    if (input != "")
+    if (input.value != "")
     {
         // create a li element
         const li = document.createElement("li");
