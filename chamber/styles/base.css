@@ -29,7 +29,7 @@ header, h1 {
     padding: .1em .2em;
     position: absolute;
     right: 1em;
-    top: 5em;
+    top: 6em;
     background-color: var(--accent2-color);
     color: var(--primary-color);
     border-radius: 5px;
@@ -44,7 +44,8 @@ header, h1 {
 }
 
 #mode {
-	position: absolute;
+	position: realtive;
+    text-align: end;
 	top: 1rem;
 	right: 1rem;
 	font-size: 3rem;
