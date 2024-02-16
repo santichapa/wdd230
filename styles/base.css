@@ -19,6 +19,31 @@ header {
     background-color:antiquewhite;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+    top: 16em;
+    left: 1em;
+	background: radial-gradient(#fff, #36558f);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family: 'Times New Roman', Times, serif;
+}
+
 #menu {
     font-size: 1.5rem;
     padding: .1em .2em;
