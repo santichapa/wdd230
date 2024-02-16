@@ -34,7 +34,7 @@ header {
 }
 
 #menu.open::before {
-	content: "🞁";
+	content: "✕";
 }
 
 nav .open {
