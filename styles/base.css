@@ -12,23 +12,29 @@ main {
 }
 
 header {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color:antiquewhite;
 }
 
-.hero img {
+.hero {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.hero picture, img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    grid-column: 1/4;
+    grid-row: 1/4;
 }
 
 .herolabel {
-	position: absolute;
-    top: 16em;
-    left: 1em;
+	grid-column: 2/3;
+    grid-row: 2/3;
 	background: radial-gradient(#fff, #36558f);
 	border: 1px solid rgba(0,0,0,.75);
 	padding: 1.5rem;
