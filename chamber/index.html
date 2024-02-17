@@ -36,9 +36,17 @@
         <a href="">Join</a>
     </nav>
     <main>
-        <div class="hero-image">
+        <!-- <div class="hero-image">
             <img src="images/city-hero-image.jpg" alt="City of Lomas de Zamora" >
             <a href="">Join Us!</a>
+        </div> -->
+        <div class="hero-image">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Buenos Aires, Argentina Temple">
+            </picture>
+            <a href="#">Join Us!</a>
         </div>
         <section class="card">
             <h3>Current Events</h3>
@@ -60,12 +68,14 @@
             <h3>Information</h3>
             <ul>
                 <li>Lomas de Zamora, Buenos Aires</li>
-                <li>23 °C, Sunshine </li>
+                <li><span id="temperature">5</span> °C, Sunshine, Windspeed: <span id="windspeed">6 km/h</span></li>
+                <li>Windchill Index: <span id="windchill"></span> °C</li>
             </ul>
         </section>
     </main>
     <footer>&copy;<span id="currentdate"></span> Lomas de Zamora Chamber of Commerce | Santiago Ariel Chaparro</footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
