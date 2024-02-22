@@ -165,6 +165,10 @@ footer {
     background-color: #36558f;
 }
 
+footer img {
+    width: 12px;
+}
+
 footer #lastModified {
     color: #ffca38;
 }
