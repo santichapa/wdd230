@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LDZ Chamber of Commerce</title>
+    <title>Discover | LDZ Chamber of Commerce</title>
     <meta name="author" content="Santiago Ariel Chaparro">
     <meta name="description" content="The Lomas de Zamora Chamber of Commerce, what it is about, general information, and how to join.">
     <meta property="og:title" content="Lomas de Zamora Chamber of Commerce">
@@ -43,6 +43,8 @@
                     It is the capital of the Lomas de Zamora 
                     District and has a population of 111,897 
                     inhabitants.</p>
+                <p><span id="daysDisplay"></span></p>
+                <p><span id="visitsDisplay"></span></p>
             </div>
             <div class="card">
                 <h3>Heading</h3>
@@ -58,21 +60,21 @@
                 <iframe src="https://calendar.google.com/calendar/embed?height=480&wkst=1&ctz=America%2FArgentina%2FBuenos_Aires&bgcolor=%23f77c73&hl=en&showTabs=0&showPrint=0&showNav=0&showTitle=0&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4uYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%230B8043" style="border-width:0" width="640" height="480" frameborder="0" scrolling="no"></iframe>
             </div>
             <div class="card">
-                <h3>Heading</h3>
-                <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Error possimus amet 
-                    nesciunt, magni recusandae sequi velit 
-                    adipisci sint eum distinctio molestiae 
-                    corporis ipsam quasi illum cum. 
-                    Voluptatibus incidunt id officia.</p>
+                <h3>Information</h3>
+                <ul>
+                    <li>Lomas de Zamora, Buenos Aires</li>
+                    <li><span id="temperature">5</span> °C, Sunshine, Windspeed: <span id="windspeed">6 km/h</span></li>
+                    <li>Windchill Index: <span id="windchill"></span> °C</li>
+                </ul>
+                
             </div>
             
         </div>
         <div class="card discover-images">
             <h3>Images</h3>
-            <img src="images/lomas-city1.webp" alt="A placeholder random image" width="320" height="240">
-            <img src="images/lomas-city2.webp" alt="A placeholder random image" width="320" height="240">
-            <img src="images/lomas-city3.webp" alt="A placeholder random image" width="320" height="240">
+            <img loading="lazy" src="images/lomas-city1.webp" alt="A placeholder random image" width="320" height="240">
+            <img loading="lazy" src="images/lomas-city2.webp" alt="A placeholder random image" width="320" height="240">
+            <img loading="lazy" src="images/lomas-city3.webp" alt="A placeholder random image" width="320" height="240">
             <img loading="lazy" src="images/lomas-city4.webp" alt="A placeholder random image" width="320" height="240">
             <img loading="lazy" src="images/lomas-city5.webp" alt="A placeholder random image" width="320" height="240">
             <img loading="lazy" src="images/lomas-city6.webp" alt="A placeholder random image" width="320" height="240">
@@ -82,5 +84,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

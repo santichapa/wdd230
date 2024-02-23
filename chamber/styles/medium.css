@@ -14,4 +14,8 @@
         display: block;
         margin: .5em 1em;
     }
+
+    .discover-images img:hover {
+        opacity: .5;
+    }
 }
