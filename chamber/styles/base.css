@@ -171,6 +171,10 @@ p, ul {
     margin-bottom: .3em;
 }
 
+figcaption {
+    text-align: center;
+}
+
 /* ---------- footer ---------- */
 
 footer {
