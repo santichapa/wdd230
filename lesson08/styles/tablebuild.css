@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+body {
+    background-color: #808080;
+    font-family: Roboto;
+}
+
+header {
+    max-width: 640px;
+    margin: auto;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: black;
+    box-shadow: 0 0 .5em #fff;
+}
+header h1 {
+    margin: 1em auto auto;
+    border-bottom: 3px solid;
+    text-align: center;
+}
+
+main {
+    max-width: 640px;
+    margin: auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 .5em black;
+}
+
+table {
+    margin: auto;
+    border: 1px solid gray;
+    box-shadow: 0 2px .5em;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: .85rem;
+    padding: .3em;
+}
+
+thead th:not(:nth-child(1)) {
+    background-color: rgb(45, 45, 45);
+}
+
+th {
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+    padding: .5em 1em;
+    font-size: 1.2rem
+}
+
+tbody th {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid grey;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+td {
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5em 1em;
+}
+
+
+
+footer {
+    text-align: center;
+    max-width: 640px;
+    margin: 1em auto 0;
+    padding: 1em;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 .5em black;
+}
+
