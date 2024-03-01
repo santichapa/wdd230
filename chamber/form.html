@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
@@ -30,52 +31,37 @@
     <button id="menu"></button>
     
     <nav class="navigation">
-        <a href="#" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="">Directory</a>
-        <a href="form.html">Join</a>
+        <a href="" class="active">Join</a>
     </nav>
     <main>
-        <!-- <div class="hero-image">
-            <img src="images/city-hero-image.jpg" alt="City of Lomas de Zamora" >
-            <a href="">Join Us!</a>
-        </div> -->
-        <div class="hero-image">
-            <picture>
-                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
-                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-large.webp" alt="Buenos Aires, Argentina Temple">
-            </picture>
-            <a href="#">Join Us!</a>
-        </div>
-        <section class="card">
-            <h3>Current Events</h3>
-            <ul>
-                <li>event 1</li>
-                <li>event 2 </li>
-                <li>event 3</li>
-            </ul>
-        </section>
-        <section class="card">
-            <h3>Premium Contributors</h3>
-            <ul>
-                <li>contributor 1</li>
-                <li>contributor 2 </li>
-                <li>contributor 3</li>
-            </ul>
-        </section>
-        <section class="card">
-            <h3>Information</h3>
-            <ul>
-                <li>Lomas de Zamora, Buenos Aires</li>
-                <li><span id="temperature">5</span> °C, Sunshine, Windspeed: <span id="windspeed">6 km/h</span></li>
-                <li>Windchill Index: <span id="windchill"></span> °C</li>
-            </ul>
-        </section>
+       <form action="" method="get" class="wf1">
+        <fieldset>
+            <legend>Join Us</legend>
+            <div id="formmessage" ></div>
+            <label>Username* <input type="text" name="username" id="username" required></label>
+            <label>Password* <input type="password" name="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"></label>
+            <label>Confirm Password* <input type="password" name="password" id="password2" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"></label>
+            <label for="email">Email* <input type="email" id="email" name="email" placeholder="user@byu.edu" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+	        <label for="r">Page Rating</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+        </fieldset>
+        <input type="submit" value="Join The Chamber">
+       </form>
     </main>
     <footer>&copy;<span id="currentdate"></span> Lomas de Zamora Chamber of Commerce  Molina Arrotea 1501, Lomas de Zamora | ✉️info@ldzchamber.org 📞11 2344 555 📍Location Map</footer>
-    <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
