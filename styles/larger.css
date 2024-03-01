@@ -48,5 +48,8 @@
         margin: auto;
     }
 
+    .wdf1 {
+        grid-column: 1/3;
+    }
     
 }
