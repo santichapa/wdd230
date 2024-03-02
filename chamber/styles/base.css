@@ -48,7 +48,7 @@ header {
 }
 
 #mode {
-	position: realtive;
+    position: relative;
     text-align: end;
 	top: 1rem;
 	right: 1rem;
