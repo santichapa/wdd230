@@ -187,6 +187,10 @@ footer {
 
 /* ---------- FORM STYLING ---------- */
 
+.mainform {
+    margin: 0;
+}
+
 .wf1 fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
@@ -226,7 +230,7 @@ footer {
     border-radius: 6px;
     padding: .75rem;
     color: #555;
-    width: 100%;
+    width: 80%;
     max-width: 400px;
     appearance: none;
 }

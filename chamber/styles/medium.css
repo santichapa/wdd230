@@ -18,4 +18,9 @@
     .discover-images img:hover {
         opacity: .5;
     }
+    
+    .mainform {
+        
+        grid-template-columns: 1fr .75fr auto;
+    }
 }
