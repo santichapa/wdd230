@@ -6,12 +6,12 @@ async function getProphetData() {
     const data = await response.json();
 
     // console.table(data.prophets); // to check the data 
-    displayProtphets(data.prophets);
+    displayProphets(data.prophets);
 }
 
 getProphetData();
 
-const displayProtphets = (prophets) => {
+const displayProphets = (prophets) => {
     prophets.forEach(p => {
         const card = document.createElement("section");
         const fullName = document.createElement("h2");
