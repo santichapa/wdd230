@@ -277,6 +277,7 @@ footer {
 
 .maindirectory {
     display: flex;
+    margin: auto;
 }
 
 #cards h2 {
@@ -318,22 +319,25 @@ footer {
     color: var(--primary-color);
     background-color: var(--accent2-color);
     box-shadow: 1px 2px .3em 1px;
-    max-width: 400px;
+    width: 400px;
     margin: 1em auto 0;
 }
 
 #cards.list h3 {
     text-align: left;
     color: var(--primary-color);
-    background-color: var(--accent2-color);
-    box-shadow: 1px 2px .3em 1px;
+    background-color: inherit;
+    box-shadow: none;
+    border-right: 2px solid #555;
 }
 
 #cards.list {
     display: flex;
     flex-direction: column;
-    margin: .5em;
+    margin: auto;
+    padding: .5em;
     gap: 0;
+    
 }
 
 #cards.list section {
