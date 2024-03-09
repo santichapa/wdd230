@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LDZ Chamber of Commerce</title>
+    <title>Directory | LDZ Chamber of Commerce</title>
     <meta name="author" content="Santiago Ariel Chaparro">
-    <meta name="description" content="The Lomas de Zamora Chamber of Commerce, what it is about, general information, and how to join.">
+    <meta name="description" content="The chamber directory page that lists the members of the chamber.">
     <meta property="og:title" content="Lomas de Zamora Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://placehold.co/600x400">
@@ -35,8 +35,16 @@
         <a href="#" class="active">Directory</a>
         <a href="join.html">Join</a>
     </nav>
-    <main>
-        
+    <main class="maindirectory">
+        <article id="cards" class="list">
+            <h2>Chamber Members</h2>
+            <div>
+                <p>Layout:
+                    <button id="grid">🔲Grid</button>
+                    <button id="list">📃list</button>
+                </p>
+            </div>
+        </article>
     </main>
     <footer>&copy;<span id="currentdate"></span> Lomas de Zamora Chamber of Commerce  Molina Arrotea 1501, Lomas de Zamora | ✉️info@ldzchamber.org 📞11 2344 555 📍Location Map</footer>
     <script src="scripts/getdates.js"></script>
