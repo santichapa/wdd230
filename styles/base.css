@@ -172,3 +172,10 @@ footer img {
 footer #lastModified {
     color: #ffca38;
 }
+
+#weather-icon {
+    width: 2rem;;
+    margin-bottom: -.6em;
+    margin-left: -.3em;
+    margin-right: .3em;
+}
