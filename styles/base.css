@@ -24,7 +24,7 @@ header {
     grid-template-rows: auto auto auto;
 }
 
-.hero picture, img {
+.hero picture img {
     width: 100%;
     height: auto;
     object-fit: cover;
