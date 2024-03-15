@@ -23,4 +23,9 @@
         
         grid-template-columns: 1fr .75fr auto;
     }
+
+    .maindirectory {
+        margin: auto;
+        display: block;
+    }
 }
