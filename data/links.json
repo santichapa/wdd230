@@ -117,8 +117,17 @@
             "lesson": "10",
             "links": [
                 {
+                    "url": "lesson10/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        },
+        {
+            "lesson": "11",
+            "links": [
+                {
                     "url": "",
-                    "title": ""
+                    "title": "coming soon"
                 }
             ]
         }
