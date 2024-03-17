@@ -46,6 +46,13 @@ function displayWeather(data) {
     let desc = data.weather[0].description;
     weatherIcon.setAttribute("alt", desc);
     captionDesc.textContent = desc;
+    
+    const wc = document.querySelector("#windchill");
+    if (data.main.temp < 20) {
+        wc.innerHTML = calculateWindchill(data.main.temp, data.wind.speed)
+    } else {
+        wc.innerHTML = NaN
+    }
 
     // if (data.weather.length > 1) {
     //     data.weather.forEach(w => {
@@ -114,3 +121,10 @@ function getDayOfWeek(date) {
     return weekdays[date];
   }
 
+  const wc = document.querySelector("#windchill");
+
+
+
+function calculateWindchill(temp, wind) {
+    return Math.round(13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.4275 * temp * Math.pow(wind, 0.16));
+}
