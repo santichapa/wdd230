@@ -11,8 +11,8 @@ document.getElementById("currentdate").innerText = new Date().getFullYear();
 const btn = document.querySelector("#banner-button"); 
 
 btn.addEventListener("click", () => {
-    document.querySelector(".banner").classList.add(".hide");
-    document.querySelector(".banner").classList.remove(".banner")
+    document.querySelector(".banner").classList.add("hide");
+    document.querySelector(".banner"). classList.toggle(".banner");
 });
 
 function checkMeetingDay() {
