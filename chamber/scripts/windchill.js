@@ -1,4 +1,4 @@
-const temp = parseInt(document.querySelector("#temperature").textContent);
+const temp = parseInt(document.querySelector("#current-temp").textContent);
 const wind = parseInt(document.querySelector("#windspeed").textContent);
 const wc = document.querySelector("#windchill");
 

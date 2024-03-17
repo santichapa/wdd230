@@ -64,18 +64,20 @@
                 <li>contributor 3</li>
             </ul>
         </section>
-        <section class="card">
+        <section class="card" id="info">
             <h3>Information</h3>
-            <ul>
-                <li>Lomas de Zamora, Buenos Aires</li>
-                <li><span id="temperature">5</span> °C, Sunshine, Windspeed: <span id="windspeed">6 km/h</span></li>
-                <li>Windchill Index: <span id="windchill"></span> °C</li>
+            <ul id="display-forecast">
+                <li>Lomas de Zamora, Buenos Aires today:</li>
+                <li><img id="weather-icon" src="" alt="" width="20"><span id="current-temp"></span>&deg C, <span id="weather-desc"></span>, Windspeed: <span id="windspeed"></span> km/h</li>
+                <!-- <li>Windchill Index: <span id="windchill"></span> °C</li> -->
+                <h4>3-day Forecast</h4>
             </ul>
         </section>
     </main>
     <footer>&copy;<span id="currentdate"></span> Lomas de Zamora Chamber of Commerce  Molina Arrotea 1501, Lomas de Zamora | ✉️info@ldzchamber.org 📞11 2344 555 📍Location Map</footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
 </body>
 </html>

@@ -363,3 +363,21 @@ footer {
     background-color: var(--accent1-color);
 }
 
+#weather-icon, #display-forecast img {
+    width: 3rem;
+    margin-bottom: -.6em;
+    margin-left: -.3em;
+    margin-right: .3em;
+}
+
+#display-forecast figure{
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+}
+
+#display-forecast h4 {
+    text-align: center;
+}
