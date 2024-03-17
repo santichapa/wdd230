@@ -382,3 +382,14 @@ footer {
     text-align: center;
     margin-bottom: 0;
 }
+
+/* ---------- BANNER STYLING ---------- */
+
+.banner button {
+    padding: 0;
+    margin: 0 1em 0 0;
+}
+
+.hide {
+    display: none;
+}
