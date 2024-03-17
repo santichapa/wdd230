@@ -41,4 +41,7 @@
         grid-column: 1/2;
     }
 
+    .hide {
+        display: none;
+    }
 }
