@@ -40,7 +40,7 @@ async function forecastFetch() {
 forecastFetch();
 
 function displayWeather(data) {
-    currentTemp.innerHTML = data.main.temp.toFixed(1);
+    currentTemp.innerHTML = data.main.temp.toFixed();
     windspeed.innerHTML = data.wind.speed;
     weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     let desc = data.weather[0].description;
@@ -84,7 +84,7 @@ function displayForecast(data) {
         icon.setAttribute("src", `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`);
         let desc = day.weather[0].description;
         icon.setAttribute("alt", desc)
-        caption.textContent = `${getDayOfWeek(i/8)}, ${day.main.temp.toFixed(1)}° C, ${desc}`;
+        caption.textContent = `${getDayOfWeek(i/8)}, ${day.main.temp.toFixed()}° C, ${desc}`;
     
         const li = document.createElement("li");
         fig.appendChild(icon);
