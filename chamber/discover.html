@@ -60,15 +60,16 @@
                 <h3>Calendar</h3>
                 <iframe src="https://calendar.google.com/calendar/embed?height=480&wkst=1&ctz=America%2FArgentina%2FBuenos_Aires&bgcolor=%23f77c73&hl=en&showTabs=0&showPrint=0&showNav=0&showTitle=0&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4uYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%230B8043" style="border-width:0" width="640" height="480" frameborder="0" scrolling="no"></iframe>
             </div>
-            <div class="card">
+            <section class="card" id="info">
                 <h3>Information</h3>
                 <ul id="display-forecast">
                     <li>Lomas de Zamora, Buenos Aires today:</li>
-                    <li><img id="weather-icon" src="" alt="" width="20"><span id="current-temp"></span>&deg C, <span id="weather-desc"></span>, Windspeed: <span id="windspeed"></span> km/h</li>
+                    <li><img id="weather-icon" width="20"><span id="current-temp"></span>&deg C, <span id="weather-desc"></span>, Windspeed: <span id="windspeed"></span> km/h</li>
                     <li>Windchill Index: <span id="windchill"></span> °C</li>
-                    <h4>3-day Forecast</h4>
                 </ul>
-            </div>
+                <h4>3-day Forecast</h4>
+                <ul id="display-3d-forecast"></ul>
+            </section>
             
         </div>
         <div class="card discover-images">

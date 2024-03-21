@@ -79,7 +79,6 @@ function displayForecast(data) {
         const fig = document.createElement("figure");
         const caption = document.createElement("figcaption");
         const icon = document.createElement("img");
-        let timems = Date(day.dt_txt)
         
         icon.setAttribute("src", `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`);
         let desc = day.weather[0].description;
@@ -91,8 +90,6 @@ function displayForecast(data) {
         fig.appendChild(caption);
         li.appendChild(fig);
         document.querySelector("#display-3d-forecast").appendChild(li);  
-        
-        console.log(day)
     }
 //     data.forEach(day => {
 //         const fig = document.createElement("figure");

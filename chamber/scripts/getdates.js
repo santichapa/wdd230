@@ -8,11 +8,13 @@ document.getElementById("currentdate").innerText = new Date().getFullYear();
 
 // localStorage.setItem("recordDateTime-ls", recordDateTime);
 
-const btn = document.querySelector("#banner-button"); 
+const btn = document.getElementById("banner-button"); 
 
-btn.addEventListener("click", () => {
-    document.querySelector(".banner").classList.add("hide");
-    document.querySelector(".banner"). classList.toggle(".banner");
+btn?.addEventListener("click", () => {
+    if (btn != null) {
+        document.querySelector(".banner").classList.add("hide");
+        document.querySelector(".banner"). classList.toggle(".banner");
+    }
 });
 
 function checkMeetingDay() {
