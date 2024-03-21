@@ -90,7 +90,7 @@ function displayForecast(data) {
         fig.appendChild(icon);
         fig.appendChild(caption);
         li.appendChild(fig);
-        document.querySelector("#display-forecast").appendChild(li);  
+        document.querySelector("#display-3d-forecast").appendChild(li);  
         
         console.log(day)
     }
