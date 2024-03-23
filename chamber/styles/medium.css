@@ -32,4 +32,10 @@
     .hide {
         display: none;
     }
+
+    #contributors h3 {
+        grid-row: 1;
+        grid-column: 1/4;
+        text-align: center;    
+    }
 }

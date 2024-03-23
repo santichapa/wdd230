@@ -26,9 +26,8 @@
     }
 
     .card {
-        display: block;
+        /* display: block; */
         margin: 1em 0;
-        
     } 
 
     .discover-images {
