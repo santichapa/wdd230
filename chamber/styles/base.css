@@ -393,7 +393,7 @@ h4 {
 
 #contributors h3 {
     grid-row: 1;
-    grid-column: 1/3;
+    grid-column: auto;
     text-align: center;    
 }
 
@@ -410,18 +410,16 @@ h4 {
 
 #contributors {
     display: grid;
-    grid-auto-rows: auto 1fr;
-    /* grid-template-rows: auto 1fr; */
     gap: .5em;
-}
-
-#contributors img {
-    max-width: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(150px 200px));
+    
     
 }
 
+
 #contributors section {
+    max-width: 200px;
     text-align: center;
     padding: .5em;
-    max-width: 100%;
+    margin: auto;
 }

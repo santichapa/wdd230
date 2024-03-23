@@ -33,9 +33,11 @@
         display: none;
     }
 
+    #contributors {
+        grid-column: 1fr 1fr;
+    }
+
     #contributors h3 {
-        grid-row: 1;
-        grid-column: 1/4;
-        text-align: center;    
+        grid-column: 1/3;
     }
 }
