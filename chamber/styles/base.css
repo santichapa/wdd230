@@ -4,6 +4,11 @@
     --accent1-color: #ffffff;
     --accent2-color: #f77c73;
     --accent3-color: #d3d3d3;
+    --form-bg-color: #eee;
+    --form-placeholder-color: #ddd;
+    --form-font1-color: #555;
+    --form-font2-color: #445282 #7c92d9;
+    --form-title-color: #445ba9;
 
     /* #b8564f */
 
@@ -196,14 +201,14 @@ footer {
 
 .wf1 fieldset {
     margin: 2rem 0;
-    border: 1px solid #ddd;
-    background-color: #eee;
+    border: 1px solid var(--form-placeholder-color);
+    background-color: var(--form-bg-color);
     border-radius: 6px;
     padding: .5rem 2%;
 }
 
 .wf1 legend {
-    color: #445ba9;
+    color: var(--form-title-color);
     font-size: 1.2rem;
     padding: 0 .5rem;
 }
@@ -211,13 +216,13 @@ footer {
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: #445282;
+    color: var(--form-font2-color);
     font-size: .9rem;
 }
 
 .wf1 div {
     padding-top: 1rem;
-    color: #445ba9;
+    color: var(--form-title-color);
     font-size: .9rem;
 }
 
@@ -232,10 +237,11 @@ footer {
     border: 1px solid #999;
     border-radius: 6px;
     padding: .75rem;
-    color: #555;
+    color: var(--form-font1-color);
     width: 80%;
     max-width: 400px;
     appearance: none;
+    background-color: var(--accent1-color);
 }
 
 .wf1 input[type="radio"],

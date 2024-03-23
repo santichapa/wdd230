@@ -18,6 +18,9 @@ modeButton.addEventListener("click", () => {
 		root.style.setProperty("--accent1-color", "#fff");
 		root.style.setProperty("--accent2-color", "#f77c73");
 		root.style.setProperty("--accent3-color", "#d3d3d3");
+		root.style.setProperty("--form-bg-color", "#eee");
+		root.style.setProperty("--form-font1-color", "#555");
+		root.style.setProperty("--form-font2-color", "#445282");
 		modeButton.textContent = "☀️";
 	} else {
 		root.style.setProperty("--primary-color", "#fff");
@@ -25,6 +28,9 @@ modeButton.addEventListener("click", () => {
 		root.style.setProperty("--accent1-color", "#333");
 		root.style.setProperty("--accent2-color", "#90342e");
 		root.style.setProperty("--accent3-color", "#222");
+		root.style.setProperty("--form-bg-color", "#222");
+		root.style.setProperty("--form-font1-color", "#fff");
+		root.style.setProperty("--form-font2-color", "#7c92d9");
 		modeButton.textContent = "🌙";
 	}
 });
