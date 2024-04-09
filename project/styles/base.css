@@ -1,0 +1,87 @@
+:root {
+    --primary-font-color: #000;
+    --primary-background: #ff3232;
+    --faded-black: rgb(0, 0, 0, 50%);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  header { 
+    background-color: rgb(239, 239, 116);
+    color: ;
+    padding: 1em;
+}
+
+#menu {
+    font-size: 1.5rem;
+    padding: .1em .2em;
+    background-color: var(--primary-background);
+    color: var(--primary-font-color);
+    position: fixed;
+    right: 1em;
+    top: 2em;
+    border: 1px solid rgb(255, 85, 85);
+    border-radius: .1em;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✕";
+}
+
+nav , .navigation, a{
+    margin: 0;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-background);
+    text-align: center;
+    position: fixed;
+    right: 1.5em;
+    top: 3em;
+    width: 12em;
+    border-radius: 0 0 .5em .5em;
+
+}
+
+.navigation a {
+    display: none;
+    font-weight: 500;
+    color: white;
+    padding: .9em;
+    text-decoration: none;
+}
+
+.navigation a.active {
+    color: #ffca38 ;
+    text-decoration: underline 2px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--primary-background);
+    font-weight: 800;
+    border-radius: 0 0 .5em .5em;
+    
+}
+
+.open, .open a {
+    display: block;
+}
+
+/* ========== HAMBURGUER MENU ==========*/
+
