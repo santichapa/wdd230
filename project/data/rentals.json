@@ -1,0 +1,86 @@
+{
+    "scooters": [
+        {
+            "scooter": "Honda Metropolitan (49cc)",
+            "capacity": 1,
+            "reservation": {
+                    "halfday": 20,
+                    "fullday": 30
+            },
+            "walk-in": {
+                "halfday": 25,
+                "fullday": 35
+            }
+            
+        },
+        {
+            "scooter": "Honda Metropolitan (49cc)",
+            "capacity": 2,
+            "reservation": {
+                    "halfday": 30,
+                    "fullday": 40
+            },
+            "walk-in": {
+                "halfday": 35,
+                "fullday": 45
+            }
+            
+        },
+        {
+            "scooter": "Honda Metropolitan (49cc)",
+            "capacity": 2,
+            "reservation": {
+                    "halfday": 40,
+                    "fullday": 50
+            },
+            "walk-in": {
+                "halfday": 45,
+                "fullday": 55
+            }
+            
+        }
+    ],
+    "atvs": [
+        {
+            "atv": "Honda Pioneer 1000 ATV",
+            "capacity": 4,
+            "reservation": {
+                    "halfday": 50,
+                    "fullday": 70
+            },
+            "walk-in": {
+                "halfday": 60,
+                "fullday": 80
+            }
+            
+        }
+    ],
+    "jeeps": [
+        {
+            "jeep": "Jeep Wrangler - 4 door with a/c",
+            "capacity": 5,
+            "reservation": {
+                    "halfday": 70,
+                    "fullday": 100
+            },
+            "walk-in": {
+                "halfday": 85,
+                "fullday": 125
+            }
+            
+        },
+        {
+            "jeep": "Jeep Wrangler - 2 door",
+            "capacity": 4,
+            "reservation": {
+                    "halfday": 60,
+                    "fullday": 85
+            },
+            "walk-in": {
+                "halfday": 70,
+                "fullday": 90
+            }
+            
+        }
+    ]
+}

@@ -5,3 +5,7 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+// get current year
+document.getElementById("currentdate").innerText = new Date().getFullYear();
+

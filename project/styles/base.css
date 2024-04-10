@@ -1,6 +1,8 @@
 :root {
     --primary-font-color: #000;
     --primary-background: #ff3232;
+    --background-2: #ffca38;
+    --background-light: #ffe;
     --faded-black: rgb(0, 0, 0, 50%);
 }
 
@@ -17,10 +19,75 @@ body {
   }
 
   header { 
-    background-color: rgb(239, 239, 116);
-    color: ;
+    background-image: linear-gradient(to right, #ffa600 , #e7e702);
+    color: var(--primary-font-color);
     padding: 1em;
 }
+
+.hero, main {
+    margin: auto;
+}
+
+.hero img{
+    max-width: 100%;
+    margin: auto;
+}
+
+.hero a {
+    justify-content: center;
+    position: relative;
+    bottom: 5em;
+    left: 3em;
+    font-weight: 900;
+    font-size: larger;
+    color: #000;
+    padding: 1em;
+    border-radius: .5em;
+    text-decoration: none;
+    background-color: #ff3232;
+}
+.hero a:hover {
+    text-shadow: #ffedbb 1px 1px 10px;
+    color: #ffedbb;
+    border: 2px solid #af2626;
+    background-color: #af2626;
+}
+
+h3 {
+    margin: 1em;
+}
+
+h2, h4 {
+    text-align: center;
+    background-color: #ffd500;
+    border-radius: .5em;
+    padding: .3em;
+    margin: 0;
+}
+
+.card {
+    padding: .5em;
+    background-color: var(--background-light);
+    margin: .5em;
+    /* border: 1px solid rgb(213, 201, 144); */
+    border-radius: .5em;
+    box-shadow: 1px 2px 5px grey;
+    align-content: center;
+}
+
+.card ul, .card li {
+    /* margin: 1em .5em; */
+    list-style-type: none;
+    padding: .5em;
+}
+
+.card picture{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* ========== HAMBURGUER MENU ==========*/
 
 #menu {
     font-size: 1.5rem;
@@ -28,7 +95,7 @@ body {
     background-color: var(--primary-background);
     color: var(--primary-font-color);
     position: fixed;
-    right: 1em;
+    right: .7em;
     top: 2em;
     border: 1px solid rgb(255, 85, 85);
     border-radius: .1em;
@@ -51,7 +118,7 @@ nav , .navigation, a{
     background-color: var(--primary-background);
     text-align: center;
     position: fixed;
-    right: 1.5em;
+    right: 1em;
     top: 3em;
     width: 12em;
     border-radius: 0 0 .5em .5em;
@@ -83,5 +150,75 @@ nav a:hover {
     display: block;
 }
 
-/* ========== HAMBURGUER MENU ==========*/
+/* ========== WEATHER STYLING ==========*/
+
+#weather-icon {
+    width: 2rem;
+    margin-bottom: -.6em;
+    margin-left: -.3em;
+    margin-right: .3em;
+}
+
+#weather-icon, #display-forecast img, #display-3d-forecast img{
+    width: 3rem;
+    margin-bottom: -.6em;
+    margin-left: -.3em;
+    margin-right: .3em;
+}
+
+#display-forecast figure, #display-3d-forecast figure{
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.banner {
+    background-color: var(--background-light);
+    padding: .2em;
+    margin: 0;
+}
+
+.banner button {
+
+    margin: 0 .5em .5em 0;
+    padding: .2em .3em;
+}
+
+/* ========== FOOTER STYLING ==========*/
+
+footer {
+    background-color: var(--background-2);
+    padding: 1em;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+footer li {
+    list-style-type: none;
+    padding: .5em;
+    margin: .5em;
+    font-weight: 300;
+}
+
+footer a {
+    color: var(--primary-font-color);
+    text-decoration: none;
+}
+
+footer .fa-brands {
+    font-size: 1.5rem;
+    width: 1.5em;
+}
 
