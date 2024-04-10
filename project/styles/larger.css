@@ -1,5 +1,71 @@
 @media screen and (min-width: 640px) {
     * {
-        color: aqua;
+        /* color: aqua; */
+    }
+
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    header {
+        max-width: 1200px;
+        width: 100%;
+        position: fixed;
+        display: grid;
+        grid-template-columns: auto auto;
+        z-index: 3;
+        padding: 1em 0;
+    }
+
+    h1 {
+        width: auto;
+        padding: 0 1em;
+    }
+
+    .hero {
+        margin: 0;
+        display: inline;
+        filter:drop-shadow();
+        grid-column: 1/3;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation{
+        position: initial;
+        background: none;
+        width: auto;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .navigation a {
+        color:  black;
+        display: block;
+        margin: 2em auto auto;
+        padding: auto .5em;
+    }
+
+    .navigation a.active {
+        color: #ff3232;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer p {
+        grid-column: 1/3;
     }
 }
