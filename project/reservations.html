@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | ~Cozumel Scoots~</title>
+    <meta name="author" content="Santiago Ariel Chaparro">
+    <meta name="description" content="Reservations page that contains a rental agreement information and a form.">
+    <meta property="og:title" content="Cozumel Scooters - Cozumel, Mexico">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://santichapa.github.io/wdd230/project/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/04abea4d91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>🛵Cozumel Scoots</h1>
+        <div class="navigation">
+            <button id="menu"></button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservations.html" class="active">Reservations</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="reservationmain">
+        <p class="info"><strong>Make a reservation!</strong></p>
+        <div>
+        </div>
+        <section class="card">
+            <h2>Reservation agreements</h2>
+            <ul>
+                <li><strong>></strong> A $50 security deposit is required to confirm reservations.</li>
+                <li><strong>></strong> A valid drivers license is required in hand at the time of rental.</li>
+                <li><strong>></strong> No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li><strong>></strong> Fuel charge is not included.</li>
+                <li><strong>></strong> Unlimited mileage.</li>
+                <li><strong>></strong> Liability insurance is included.</li>
+                <li><strong>></strong> Damage insurance is available for purchase.</li>
+                <li><strong>></strong> Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li><strong>></strong> Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li><strong>></strong> Rentals may be returned to either physical location.</li>
+            </ul>
+        </section>
+        <form action="record.html" method="get" class="wf card" target="_blank">
+            <fieldset>
+                <legend>Reservation Form</legend>
+                <label>From: <input type="date" name="startDate"></label>
+                <label>To: <input type="date" name="endDate"></label>
+                <label>Rental Vehicle
+                    <select name="">
+                    <option value="">Please Select &#9662;</option>
+                    <option value="honda-metro">Honda Metropolitan (49cc)</option>
+                    <option value="honda-dio">Honda Dio (110cc)</option>
+                    <option value="honda-pcx150">Honda PCX150 (149cc)</option>
+                    <option value="honda-pioneer">Honda Pioneer 1000 (ATV)</option>
+                    <option value="jeep-wrangler-2d">Jeep Wrangler - 2 door</option>
+                    <option value="jeep-wrangler-4d">Jeep Wrangler - 4 door with a/c</option>
+                    </select>
+                </label>
+                
+                
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone* <input type="tel" name="fname" required placeholder="1235551234"></label>
+                <label>Email* <input type="email" name="email" required placeholder="someone@mail.com"></label>
+                <label>Address 1* <input type="text" name="adress1" required placeholder="adress 1"></label>
+                <label>Address 2 <input type="text" name="adress2" placeholder="adress 2"></label>
+                <label>Cruise Line <input type="text" name="cruiseline"></label>
+                <label>Drop Off Request <textarea name="dropoff" cols="40" rows="5" placeholder="Write the request here..."></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit Reservation">
+           </form>
+    </main>
+    <footer>
+            <ul><strong>Contact Info</strong>
+                <li><i class="fa-solid fa-phone"></i> 978-331-452</li>
+                <li><i class="fa-solid fa-map"></i> 5th Av. between 2nd and 3rd street, Cozumel, Quintana Roo</li>
+                <li><i class="fa-solid fa-envelope"></i></i> info@cozumelscoots.com</li>
+            </ul>
+            <ul> <strong>Follow Us</strong>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a> 
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></i></a> 
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-square-youtube"></i></a> 
+                    <a href="https://twitter.com"><i class="fa-brands fa-square-x-twitter"></i></a> 
+            </ul>
+            <p>&copy;<span id="currentdate"></span> Cozumel Scoots | <a href="attributions.html">attributions <i class="fa-solid fa-arrow-right"></i></a></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

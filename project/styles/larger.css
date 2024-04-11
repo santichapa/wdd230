@@ -80,7 +80,7 @@
         padding: 1em;
     }
 
-    .rentalsmain {
+    .rentalsmain .reservationsmain{
         display: block;
     }
 }
