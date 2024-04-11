@@ -4,6 +4,7 @@
             "category": "Scooter",
             "modelName": "Honda Metropolitan (49cc)",
             "capacity": 1,
+            "imageurl": "scooter-honda-metro",
             "reservation": {
                     "halfday": 20,
                     "fullday": 30
@@ -16,8 +17,9 @@
         },
         {
             "category": "Scooter",
-            "modelName": "Honda Metropolitan (49cc)",
+            "modelName": "Honda Dio (110cc)",
             "capacity": 2,
+            "imageurl": "scooter-honda-dio",
             "reservation": {
                     "halfday": 30,
                     "fullday": 40
@@ -30,8 +32,9 @@
         },
         {
             "category": "Scooter",
-            "modelName": "Honda Metropolitan (49cc)",
+            "modelName": "Honda PCX150 (149cc)",
             "capacity": 2,
+            "imageurl": "scooter-honda-pcx150",
             "reservation": {
                     "halfday": 40,
                     "fullday": 50
@@ -44,8 +47,9 @@
         },
         {
             "category": "ATV",
-            "modelName": "Honda Pioneer 1000 ATV",
+            "modelName": "Honda Pioneer 1000",
             "capacity": 4,
+            "imageurl": "atv-honda-pioneer",
             "reservation": {
                     "halfday": 50,
                     "fullday": 70
@@ -60,6 +64,7 @@
             "category": "Jeep",
             "modelName": "Jeep Wrangler - 4 door with a/c",
             "capacity": 5,
+            "imageurl": "jeep-wrangler-4d",
             "reservation": {
                     "halfday": 70,
                     "fullday": 100
@@ -74,6 +79,7 @@
             "category": "Jeep",
             "modelName": "Jeep Wrangler - 2 door",
             "capacity": 4,
+            "imageurl": "jeep-wrangler-2d",
             "reservation": {
                     "halfday": 60,
                     "fullday": 85
