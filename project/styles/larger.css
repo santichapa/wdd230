@@ -54,6 +54,7 @@
     main {
         display: grid;
         grid-template-columns: auto auto;
+        padding-top: 7em;
     }
 
     footer {
@@ -63,5 +64,23 @@
 
     footer p {
         grid-column: 1/3;
+    }
+
+    #cards {
+        margin-top: 6.5em;
+    }
+
+    #cards {
+        width: 100%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1em;
+        
+        padding: 1em;
+    }
+
+    .rentalsmain {
+        display: block;
     }
 }
